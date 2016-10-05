@@ -1,0 +1,48 @@
+hero.moveRight(); - виклик методу об'єкту
+аналогічно:
+..Down()
+..Left()
+..Up()
+
+
+
+====================
+
+// Вистійте проти ворогів Brak та Treg!
+
+// Малих оґрів потрібно атакувати двічі.
+
+
+hero.moveRight();
+
+hero.attack("Brak");
+
+hero.attack("Brak");
+
+hero.moveRight();
+
+hero.moveRight();
+
+hero.attack("Treg");
+
+hero.attack("Treg");
+
+hero.moveRight();
+
+====================
+
+
+hero.say("Achoo");
+
+// Use the "say()" function to say the password.
+
+// The password is: "Achoo"
+
+hero.moveUp();
+
+hero.moveUp();
+
+====================
+
+
+
