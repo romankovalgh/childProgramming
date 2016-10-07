@@ -1,7 +1,7 @@
 <html>
  <body>
  <table>
- <tr><p><td><button class="js-emailcopybtnHero"><img src="./images/ania.jpg" /></button> </td><td> <a class="js-emaillinkHero" ><b>hero</b></a></td></p></tr>
+ <tr><td><button class="js-emailcopybtnHero"><img src="./images/ania.jpg" /></button> </td><td> <a class="js-emaillinkHero" ><b>hero</b></a></td></tr>
  
  <tr><p><td><button class="js-emailcopybtn"><img src="./images/right.jpg" /></button> </td><td><a class="js-emaillink" ><b>moveRight</b></a></td></p></tr>
  
@@ -90,61 +90,62 @@ copyEmailBtnLeft.addEventListener('click', function(event) {
   window.getSelection().removeAllRanges();  
 });
  </script>
- 
- 
+
+
  <script>
  //UP
- var copyEmailBtnUp = document.querySelector('.js-emailcopybtnUp');  
-copyEmailBtnUp.addEventListener('click', function(event) {  
-  // Выборка ссылки с электронной почтой 
-  var emailLinkUp = document.querySelector('.js-emaillinkUp');  
-  var rangeUp = document.createRange();  
-  rangeUp.selectNode(emailLinkUp);  
-  window.getSelection().addRange(rangeUp);  
-    
-  try {  
+ var copyEmailBtnUp = document.querySelector('.js-emailcopybtnUp');
+copyEmailBtnUp.addEventListener('click', function(event) {
+  // Выборка ссылки с электронной почтой
+  var emailLinkUp = document.querySelector('.js-emaillinkUp');
+  var rangeUp = document.createRange();
+  rangeUp.selectNode(emailLinkUp);
+  window.getSelection().addRange(rangeUp);
+
+  try {
     // Теперь, когда мы выбрали текст ссылки, выполним команду копирования
-    var successfulUp = document.execCommand('copy');  
-    var msgUp = successfulUp ? 'successful' : 'unsuccessful';  
-    console.log('Copy email command was ' + msgUp);  
-  } catch(err) {  
-    console.log('Oops, unable to copy');  
-  }  
-    
+    var successfulUp = document.execCommand('copy');
+    var msgUp = successfulUp ? 'successful' : 'unsuccessful';
+    console.log('Copy email command was ' + msgUp);
+  } catch(err) {
+    console.log('Oops, unable to copy');
+  }
+
   // Снятие выделения - ВНИМАНИЕ: вы должны использовать
   // removeRange(range) когда это возможно
-  window.getSelection().removeAllRanges();  
+  window.getSelection().removeAllRanges();
 });
+
  </script>
- 
+
 
 <script>
 //DOWN
- var copyEmailBtnDown = document.querySelector('.js-emailcopybtnDown');  
-copyEmailBtnDown.addEventListener('click', function(event) {  
-  // Выборка ссылки с электронной почтой 
-  var emailLinkDown = document.querySelector('.js-emaillinkDown');  
-  var rangeDown = document.createRange();  
-  rangeDown.selectNode(emailLinkDown);  
-  window.getSelection().addRange(rangeDown);  
-    
-  try {  
+ var copyEmailBtnDown = document.querySelector('.js-emailcopybtnDown');
+copyEmailBtnDown.addEventListener('click', function(event) {
+  // Выборка ссылки с электронной почтой
+  var emailLinkDown = document.querySelector('.js-emaillinkDown');
+  var rangeDown = document.createRange();
+  rangeDown.selectNode(emailLinkDown);
+  window.getSelection().addRange(rangeDown);
+
+  try {
     // Теперь, когда мы выбрали текст ссылки, выполним команду копирования
-    var successfulDown = document.execCommand('copy');  
-    var msgDown = successfulDown ? 'successful' : 'unsuccessful';  
-    console.log('Copy email command was ' + msgDown);  
-  } catch(err) {  
-    console.log('Oops, unable to copy');  
-  }  
-    
+    var successfulDown = document.execCommand('copy');
+    var msgDown = successfulDown ? 'successful' : 'unsuccessful';
+    console.log('Copy email command was ' + msgDown);
+  } catch(err) {
+    console.log('Oops, unable to copy');
+  }
+
   // Снятие выделения - ВНИМАНИЕ: вы должны использовать
   // removeRange(range) когда это возможно
-  window.getSelection().removeAllRanges();  
+  window.getSelection().removeAllRanges();
 });
  </script>
 
- 
- 
+
+
  </body>
  </html>
  
